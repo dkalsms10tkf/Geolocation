@@ -18,7 +18,7 @@
             <button onclick="searchByAddress()">주소명으로 지도찾기</button>
         </div>
     </fieldset>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e9995191f563f31018126884c6163553">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ba3d52774687ac1d11d2d8f3c61a9af1">
     /* 샘플코드
         var mapContainer = document.getElementById('map'); // 지도를 표시할 div 
         var mapOption = { 
@@ -75,6 +75,9 @@
                 // 마커 위에 인포윈도우를 표시합니다
                 infowindow.open(map, marker);  
              });
+             function searchByAddress() {
+                var address = document.getElementById('address').value;
+             };
         };
     </script>
 </body>
